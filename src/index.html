@@ -1,0 +1,62 @@
+forms.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script type="module" src="/index.js"></script>
+</head>
+<body>
+    <form id="login">
+        <label>Username: <input type="text" id="username" /></label><br>
+        <label>Password: <input type="password" id="password" /></label><br>
+        <a href="/forms.html">
+            <button type="submit" id="submitButton">Submit</button>
+        </a>
+    </form><br>
+    <p id="error"></p><br><br>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+    <table>
+        <tr>
+            <th>Team #:</th>
+            <th>Bits (Currency):</th>
+            <th>Sparks (Energy):</th>
+            <th>Population:</th>
+            <th>Carbon/Second (GHG Production)</th>
+        </tr>
+        <tr>
+            <td id="teamNum"></td>
+            <td id="bits"></td>
+            <td id="sparks"></td>
+            <td id="pop"></td>
+            <td id="carbon"></td>
+        </tr>
+    </table><br>
+    <form id="myForm">
+        <label for="dropdown">Please select the item you bought:</label><br>
+        <select name="dropdown" id="dropdown">
+            <option value="">——Select Here——</option>
+            <option value="House">House</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Grocery Store">Grocery Store</option>
+            <option value="Hospital">Hospital</option>
+            <option value="Coal Plant">Coal Plant</option>
+            <option value="Solar Panels">Solar Panels</option>
+        </select><br><br>
+        <label for="number">How many of this item did you buy?</label><br>
+        <input type="text" name="number" id="number"><br>
+        <button type="submit" id="submitData">Submit</button>
+    </form><br>
+    <h1 id="myHeader"></h1>
+</body>
+</html>
